@@ -1,6 +1,9 @@
 const express = require('express');
-const knex = require('knex');
+const db = require('../data/db-config');
 
+// these will go in knexfile.js and exported to db-config.js
+//const knex = require('knex');
+/*
 const db = knex({
   client: 'sqlite3',
   connection: {
@@ -8,6 +11,7 @@ const db = knex({
   },
   useNullAsDefault: true
 });
+*/
 
 const router = express.Router();
 
